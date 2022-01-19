@@ -25,6 +25,29 @@ The service inside of docker iamge is started
 Run brower localhost:5000/hello-world
 Display: Hello World!
 
+https://www.youtube.com/watch?v=iqqDU2crIEQ&t=1002s
+Make web server Docker image script file docker-compose.yml
+FROM node:12.16.3
+WORKDIR /code
+ENV PORT 80
+COPY package.json /code/package.json
+RUN npm install
+COPY. /code
+CMD ["node", "src/server.js"]
+
+build docker image
+CMD> docker build ---tag hello-world
+CMD> docker image
+CMD> docker run hello-world
+to check any thing running docker doecker ps
+
+docker run -p 8080:80 --name hello -d hello-world
+
+
+
+
+
+
 
 
 
