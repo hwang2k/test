@@ -3,9 +3,29 @@ Docker Tutorial for Beginners -  with Java and Spring Boot-
 https://github.com/in28minutes/docker-crash-course
 https://www.youtube.com/watch?v=wHGK6rfPN5c
 
+Trandation Imployment: Applcation + Softeare + os+ Hardware => to release exe to run.
+
+Docker could build and ship anyapplication to anywhere. 
 Create app + os + libs + hardware to docker image and store to repoistory (hub.docker.com)
 Pull image to local machine or VM to run the application service
 
 access servce localhost:5000/service
 
-install docker to the local machine or vm.
+Create docker account at https://hub.docker.com/ hw822em-dl00
+
+install docker for windows to the local machine or vm.
+After installation to run doceker command in CMD
+
+C:\Users\wang>docker --version
+Docker version 20.10.12, build e91ed57
+
+Get docker image from a repository https://hub.docker.com/r/in28min/todo-web-application-h2
+docker run -p 5000:5000 in28min/todo-rest-api-h2:1.0.0.RELEASE
+The service inside of docker iamge is started
+Run brower localhost:5000/hello-world
+Display: Hello World!
+
+
+
+
+
