@@ -1,0 +1,11 @@
+Docker Tutorial for Beginners -  with Java and Spring Boot- 
+
+https://github.com/in28minutes/docker-crash-course
+https://www.youtube.com/watch?v=wHGK6rfPN5c
+
+Create app + os + libs + hardware to docker image and store to repoistory (hub.docker.com)
+Pull image to local machine or VM to run the application service
+
+access servce localhost:5000/service
+
+install docker to the local machine or vm.
