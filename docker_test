@@ -25,6 +25,7 @@ The service inside of docker iamge is started
 Run brower localhost:5000/hello-world
 Display: Hello World!
 
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
 https://www.youtube.com/watch?v=iqqDU2crIEQ&t=1002s
 Make web server Docker image script file docker-compose.yml
 FROM node:12.16.3
@@ -43,11 +44,35 @@ to check any thing running docker doecker ps
 
 docker run -p 8080:80 --name hello -d hello-world
 
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+How to create Docker Image and run Java App (Spring Boot Jar) in a Docker Engine | Tech Primers
+https://www.youtube.com/watch?v=FlSup_eelYE
 
+1. download docker installer
+2. Create spring-boot application by IntelliJ IDEA
+  https://start.spring.io to create spring boot template
+  Group: com.hwang822
+  Artifact: docker-spring-boot 
+  
+  Click Generate Project
+  cre4ated a dockwer-apring-boot.zip unzip and opened by IJ
+  
+  
+package com.hwang822.dockerspringboot;
 
+DockerSpingBootApplication.java
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@SpringBootApplication
+public class DockerSpringBootApplication {
 
+	public static void main(String[] args) {
+		SpringApplication.run(DockerSpringBootApplication.class, args);
+	}
+
+}
 
 
 
